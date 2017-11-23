@@ -22,9 +22,6 @@ public class RepetitionOfWords {
 
         scanner.close();
 
-
-
-
         List sortedList = new ArrayList(words.entrySet());
         Collections.sort(sortedList, new Comparator<Map.Entry<Integer, Integer>>() {
             @Override
