@@ -23,16 +23,15 @@ public class RepetitionOfWords {
         scanner.close();
 
 
+
+
         List sortedList = new ArrayList(words.entrySet());
         Collections.sort(sortedList, new Comparator<Map.Entry<Integer, Integer>>() {
             @Override
             public int compare(Map.Entry<Integer, Integer> a, Map.Entry<Integer, Integer> b) {
-                return a.getValue() - b.getValue();
+                return b.getValue() - a.getValue();
             }
         });
-
-        System.out.println(sortedList);
-
+        for (int i = 0; i < sortedList.size(); i++) System.out.println(sortedList.get(i));
     }
-
 }
