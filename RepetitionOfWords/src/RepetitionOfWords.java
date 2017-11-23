@@ -22,19 +22,6 @@ public class RepetitionOfWords {
 
         scanner.close();
 
-//        for (Map.Entry i : words.entrySet()) {
-//            System.out.print(i.getKey() + "\t - " + i.getValue() + "; ");  //первый вариант вывода
-//        }
-//
-//        System.out.println();
-//
-//        for (String i : words.keySet()) {
-//            System.out.print(i + "\t - " + words.get(i) + "; "); // второй вариант вывода
-//        }
-//
-//        System.out.println();
-
-
 
         List sortedList = new ArrayList(words.entrySet());
         Collections.sort(sortedList, new Comparator<Map.Entry<Integer, Integer>>() {
@@ -46,8 +33,6 @@ public class RepetitionOfWords {
 
         System.out.println(sortedList);
 
-
     }
-
 
 }
